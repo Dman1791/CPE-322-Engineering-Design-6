@@ -20,12 +20,12 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure-&1h5b-$go_@3u+3_df%cq%8gk7471)1l!=om$_y#(@l^cg5@l!'
+SECRET_KEY = 'REMOVED-FOR-SECURITY'
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['192.168.0.24', '127.0.0.1']
+ALLOWED_HOSTS = ['REMOVED-FOR-SECURITY']
 
 
 # Application definition
@@ -80,7 +80,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'myraspi',
 	'USER': 'pi',
-	'PASSWORD': 'PASSWORD',
+	'PASSWORD': 'REMOVED-FOR-SECURITY',
 	'HOST': '',
 	'PORT': '',
 	'OPTIONS': {

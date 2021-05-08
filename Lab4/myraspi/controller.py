@@ -15,13 +15,13 @@ def runController():
     setCpuState(cpu)
 def setDtState(val):
     values = {'name': val}
-    r = requests.put('http://127.0.0.1:8000/dt/1/', data=values, auth=('pi', 'PASSWORD'))
+    r = requests.put('http://127.0.0.1:8000/dt/1/', data=values, auth=('pi', 'REMOVED'))
 def setTmpState(val):
     values = {'name': val}
-    r = requests.put('http://127.0.0.1:8000/tmp/1/', data=values, auth=('pi', 'PASSWORD'))
+    r = requests.put('http://127.0.0.1:8000/tmp/1/', data=values, auth=('pi', 'REMOVED'))
 def setCpuState(val):
     values = {'name': val}
-    r = requests.put('http://127.0.0.1:8000/cpu/1/', data=values, auth=('pi', 'PASSWORD'))
+    r = requests.put('http://127.0.0.1:8000/cpu/1/', data=values, auth=('pi', 'REMOVED'))
 while True:
     try:
         tmp = get_temperature()
